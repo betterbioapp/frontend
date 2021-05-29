@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {Observable} from "rxjs";
 import {HttpClient} from "@angular/common/http";
 
@@ -7,7 +7,8 @@ import {HttpClient} from "@angular/common/http";
 })
 export class ProfileService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+  }
 
   public findOne(username: string | null): Observable<any> {
     const url = `http://localhost:3000/profiles/${username}`;
